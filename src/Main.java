@@ -8,8 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         int cash = 1000;
-        int upload = 200;
-
+        int upload = 1500;
         int bonus = 0;
         int total = 0;
 
@@ -19,8 +18,8 @@ public class Main {
         } else
             total = cash + upload;
 
-        for (String s : Arrays.asList("Итого на счете = " + total, " рублей, из которых " + bonus, " бонусных.")) {
-            System.out.print(s);
-        }
+        System.out.println("Итого на счете = " + total);
+        System.out.println("Из низ бонусов = " + bonus);
+
     }
 }
